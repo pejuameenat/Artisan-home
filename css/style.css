@@ -76,7 +76,7 @@ nav{
 }
 
 .head-section button{
-    width: 130px;
+    width: 150px;
     padding: .6rem;
     border: 0;
     border-radius: 5px;
@@ -163,6 +163,7 @@ nav{
   
  .head-section h1{
     font-size: 3.9rem;
+    font-weight: 600;
  }
  .head-section p{
     padding:1.5rem 0;   

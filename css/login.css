@@ -17,6 +17,7 @@
     --padding-label: 1rem 0;
     --font-medium:1rem;
     --clr-grey:#ebebeb;
+    --corn-blue: cornflowerblue;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -39,6 +40,10 @@ form h2{
 form a{
     color:var(--fade-blue);
     text-decoration: none;
+    font-weight: 600;
+}
+form a:hover, form a:focus{
+    color: var(--corn-blue)
 }
 label{
     display: block;
@@ -82,14 +87,13 @@ padding: var(--padding-label);
   font-weight: 600;
 }
 #login:hover{
-    background-color: cornflowerblue;
+    background-color:var(--corn-blue);
 }
 
 .option p{
     text-align: center;
     padding: var(--padding-nav);
     position: relative;
-    /* border: 2px solid red; */
 }
 .option p::before{
     width: 150px;
@@ -116,7 +120,7 @@ padding: var(--padding-label);
     border: 0;
     transition: 400ms ease-in;
 }
-.button button:focus{
+.button button:focus, .button button:hover{
      background-color: var(--clr-grey);
 }
 
