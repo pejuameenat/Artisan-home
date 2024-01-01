@@ -11,6 +11,7 @@
     --white: #fff;
     --grn: cadetblue;
     --fade-blue: #6089d4;
+    --cornblue: cornflowerblue;
     --clr-grey:#ebebeb;
     --navy: #09094d;
     --padding-nav:.8rem 0;
@@ -21,9 +22,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-nav{
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
-}
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -74,12 +72,17 @@ nav{
 }
 
 .container{
-    margin:  3rem auto;
+margin: 0 auto;
+padding: 3rem 0;
+}
+header{
+    background-color:var(--blck);
+    color: var(--white);
 }
 .image-hero img{
    max-width: 100%;
-   width: 90%;
-   height: 500px;
+   width: 85%;
+   height: 400px;
    border-top-left-radius: 50%;
    border-top-right-radius: 50%;
    display: block;
@@ -125,10 +128,10 @@ nav{
 
 #btn-hero_two{
     background-color: transparent;
-    border: 1px solid var(--blck);
+    border: 1px solid var(--white);
 }
 #btn-hero_two:hover{
-    background-color: var(--grn);
+    background-color: var(--fade-blue);
     border: none;
 }
 
@@ -151,7 +154,7 @@ nav{
     margin: 0 auto;
 }
 .nav_list:nth-child(5){
-    background-color: #6089d4;
+    background-color:var(--cornblue);
     padding: var(--padding-btn);
     border-radius: 5px;
 }
@@ -170,6 +173,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.image-hero img{
+    height: 500px;
 }
 .head-section, .image-hero{
     text-align: left;

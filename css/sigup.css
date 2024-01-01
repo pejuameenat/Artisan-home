@@ -116,16 +116,16 @@ input:focus, input:hover{
 }
 
 .anim-img{
-    animation:moveUp 1000ms linear infinite;
-    transition: all ease-in;
+    animation:moveUp 1000ms ease-in infinite;
+    transition: all linear;
 }
 
 @keyframes moveUp{
  0%{
-    transform: translateY(-8px);
+    transform: translateY(-7px);
  }
  100%{
-    transform: translateY(8px);
+    transform: translateY(5px);
  }
 }
 @media only screen and (min-width: 800px){
@@ -144,7 +144,7 @@ input:focus, input:hover{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 850px;
+        width: 870px;
         margin: 0 auto;
     }
     .heading img{
