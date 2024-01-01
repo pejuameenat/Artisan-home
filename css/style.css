@@ -11,6 +11,8 @@
     --white: #fff;
     --grn: cadetblue;
     --fade-blue: #6089d4;
+    --clr-grey:#ebebeb;
+    --navy: #09094d;
     --padding-nav:.8rem 0;
     --padding-btn: .8rem 1rem;
     --font-medium:1rem;
@@ -63,16 +65,26 @@ nav{
     text-align:  center;
     padding: 1.5rem .7rem;
 }
+.head-section h1{
+    font-weight: 600;
+    font-size: 2rem;
+}
 .head-section p{
  padding:1rem 0 ;   
 }
 
+.container{
+    margin:  3rem auto;
+}
 .image-hero img{
    max-width: 100%;
    width: 90%;
-   border-radius: 20px;
+   height: 500px;
+   border-top-left-radius: 50%;
+   border-top-right-radius: 50%;
    display: block;
    margin: 0 auto;
+   border: 10px solid var(--clr-grey);
 }
 
 .head-section button{
@@ -101,6 +113,9 @@ nav{
     50%{
         color: #64edcb;
         
+    }
+    75%{
+        color: var(--navy)
     }
    100%{
     color: #ed64c2;
@@ -149,21 +164,20 @@ nav{
  .container{
     max-width: 1200px;
     width: 85%;
-    margin:  1rem auto;
 
  }
  .grid-wrapper{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .head-section, .image-hero{
-    grid-column: span 6;
     text-align: left;
+    width: 50%;
  }
   
  .head-section h1{
-    font-size: 3.9rem;
-    font-weight: 600;
+    font-size: 3.8rem;
  }
  .head-section p{
     padding:1.5rem 0;   

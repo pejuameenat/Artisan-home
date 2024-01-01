@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;1,200;1,400&family=Roboto:ital,wght@1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -21,8 +22,9 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .container{
-    max-width: 1000px;
+    max-width: 500px;
     margin:  2rem auto;
+    padding: .5rem;
 }
 .heading{
     display: flex;
@@ -49,9 +51,7 @@ body{
    padding: var(--padding-btn);
    border-radius: 25px;
 }
-.nav:hover{
-
-}
+ 
 .active{
     background-color: var(--fade-blue);
 }
@@ -100,7 +100,38 @@ input:focus, input:hover{
 .hidden{
     display: none;
 }
+
+.back-home{
+    float: right ;
+    padding-top: .9rem;
+}
+.back-home img{
+    width: 15px;
+    height: 15px;
+}
+.back-home a{
+    text-decoration: none;
+    color: var(--corn-blue);
+    font-weight: 600;
+}
+
+.anim-img{
+    animation:moveUp 1000ms linear infinite;
+    transition: all ease-in;
+}
+
+@keyframes moveUp{
+ 0%{
+    transform: translateY(-8px);
+ }
+ 100%{
+    transform: translateY(8px);
+ }
+}
 @media only screen and (min-width: 800px){
+    .container{
+        max-width: 1000px;
+    }       
     .home{
         display: block;
         font-size: 2rem;
