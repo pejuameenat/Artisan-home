@@ -15,6 +15,7 @@
     --clr-grey:#ebebeb;
     --navy: #09094d;
     --padding-nav:.8rem 0;
+    --padding-one: 1rem 0;
     --padding-btn: .8rem 1rem;
     --font-medium:1rem;
 }
@@ -97,6 +98,7 @@ header{
     border-radius: 5px;
     background-color: var(--fade-blue) ;
     transition: 400ms ease-in;
+    color: var(--white);
 }
 
 .head-section span{
@@ -137,9 +139,112 @@ header{
 
 #btn-hero_one:hover{
     background-color: transparent;
-    border: 1px solid var(--blck);
+    border: 1px solid var(--white);
 }
-
+.about{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.about strong{
+    color: cadetblue;
+}
+#services{
+    min-height: 100vh;
+    color: var(--blck);
+}
+#container{
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem 1rem;
+}
+#browse{
+    font-size: 2rem;
+}
+.card{
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.card p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+  }
+  
+  .card p.small {
+    font-size: 14px;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: var(--fade-blue);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    max-width: 265px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background:var(--fade-blue);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(21);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .jobs a{
+    color:var(--cornblue);
+  }
+  #grid{
+    padding: var(--padding-one);
+  }
 @media only screen and (min-width: 800px){
     .menu{
         display: none;
@@ -169,6 +274,9 @@ header{
     width: 85%;
 
  }
+ .about{
+    font-size: 3rem;
+}
  .grid-wrapper{
     display: flex;
     justify-content: space-between;
@@ -192,4 +300,16 @@ header{
     font-size: var(--font-medium);
    }
 
+   #container{
+    max-width: 1128px;
+    padding: 0;
+   }
+   #browse{
+    font-size: 3.5rem;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
 }
