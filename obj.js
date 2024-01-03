@@ -1,7 +1,7 @@
 
  const obj = [
     {id: 0,
-    job: 'tailoring',
+    job: 'Tailoring',
     desc: 'lorem ipsum dolor sit amet consectier ilium'
    },
    {id: 1,

@@ -84,8 +84,8 @@ header{
    max-width: 100%;
    width: 85%;
    height: 400px;
-   border-top-left-radius: 50%;
-   border-top-right-radius: 50%;
+   border-top-left-radius: 40%;
+   border-bottom-right-radius: 40%;
    display: block;
    margin: 0 auto;
    border: 10px solid var(--clr-grey);
@@ -245,6 +245,9 @@ header{
   #grid{
     padding: var(--padding-one);
   }
+  #grid h3{
+    font-weight: 600;
+  }
 @media only screen and (min-width: 800px){
     .menu{
         display: none;
@@ -312,4 +315,5 @@ header{
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+
 }
