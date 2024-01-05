@@ -54,7 +54,7 @@
 
  export const obj2 = [
    {id: 0,
-   h4:'how do i request the services of an artisan ?',
+   h4:'how do I request the services of an artisan ?',
    p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat numquam non, aperiam laboriosam accusamus?Lorem ipsum dolor sit amet.'
    },
    {id: 1,
@@ -62,24 +62,54 @@
       p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat numquam non, aperiam laboriosam accusamus?Lorem ipsum dolor sit amet.'
    },
    {id: 2,
-      h4:'how do i know an artisan has been verified ?',
+      h4:'how do I know an artisan has been verified ?',
       p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat numquam non, aperiam laboriosam accusamus?Lorem ipsum dolor sit amet.'
     },
    {id: 3,
-      h4:"Will i get a reversal if i'm not satisfied with services rendered ?",
+      h4:"Will I get a reversal if i'm not satisfied with services rendered ?",
       p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat numquam non, aperiam laboriosam accusamus?Lorem ipsum dolor sit amet.'
    },
    {id: 4,
-      h4:'how do i verify my account as a vendor ?',
+      h4:'how do I verify my account as a vendor ?',
       p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat numquam non, aperiam laboriosam accusamus?Lorem ipsum dolor sit amet.'
       },
    {id: 5,
-      h4:'how do i request the services of an artisan ?',
+      h4:'how do I request the services of an artisan ?',
        p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat numquam non, aperiam laboriosam accusamus?Lorem ipsum dolor sit amet.'
    },
    {id: 6,
-      h4:'how do i request the services of an artisan ?',
+      h4:'how do I verify my account as an employer ?',
       p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat numquam non, aperiam laboriosam accusamus?Lorem ipsum dolor sit amet.'
    }
 ]
 
+export const obj3 = [
+   {id:0,
+    h5: 'About Us',
+    listOne: 'Our Story',
+    listTwo:  'Team',
+    listThree:  'Careers',
+    listFour: 'Partners'
+},
+{id:0,
+   h5: 'Services',
+   listOne: 'Plumbing',
+   listTwo:  'Baking',
+   listThree:  'Painting',
+   listFour: 'Pottery'
+},
+{id:2,
+   h5: 'Resources',
+   listOne: 'Blogs',
+   listTwo:  'Tutorials',
+   listThree:  'News',
+   listFour: 'Faqs'
+},
+{id:3,
+   h5: 'Contact',
+   listOne: 'Support',
+   listTwo:  'Feedback',
+   listThree:  'Find Us',
+   listFour: 'Partners'
+}
+]

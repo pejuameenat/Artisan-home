@@ -55,13 +55,13 @@ nav {
 
 .nav-lists {
   display: none;
+  transition: 400ms ease-in;
 }
 
 .nav_links {
   text-decoration: none;
   color: var(--white);
   text-transform: uppercase;
-  transition: 400ms ease-in;
 }
 
 .nav_links:hover {
@@ -218,7 +218,7 @@ header {
 .go-arrow {
   margin-top: -4px;
   margin-right: -4px;
-  color: white;
+  color: var(--white);
 }
 
 .card1 {
@@ -319,6 +319,16 @@ fieldset {
   display: none;
 }
 
+footer, #copy{
+  background-color: var(--blck)!important;
+}
+footer li{
+  transition: 400ms ease-in;
+}
+footer a:hover{
+  text-decoration: underline ;
+
+}
 @media only screen and (min-width: 800px) {
   .menu {
     display: none;

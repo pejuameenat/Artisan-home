@@ -1,7 +1,10 @@
-import { obj, obj2  } from "./obj.js";
+import { obj, obj2, obj3 } from "./obj.js";
 
 const cards = document.getElementById("grid");
 const questions = document.getElementById("faq");
+const footerWrapper = document.getElementById("footerWrapper");
+
+
 
 function makeCards() {
   let html = "";
@@ -62,3 +65,50 @@ navigator.geolocation.getCurrentPosition(function(position){
 }, function(){
   alert('not seen')
 })
+
+
+function footer(){
+  let element = ''
+  obj3.map(function(elem){
+   element +=  `<div class="mb-6">
+   <h5
+     class="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200">
+     ${elem.h5}
+   </h5>
+
+   <ul class="mb-0 list-none">
+     <li>
+       <a href="#!" class="text-neutral-800 dark:text-neutral-200"
+         >${elem.listOne}</a
+       >
+     </li>
+     <li>
+       <a href="#!" class="text-neutral-800 dark:text-neutral-200"
+         >${elem.listTwo}</a
+       >
+     </li>
+     <li>
+       <a href="#!" class="text-neutral-800 dark:text-neutral-200"
+         >${elem.listThree}</a
+       >
+     </li>
+     <li>
+       <a href="#!" class="text-neutral-800 dark:text-neutral-200"
+         >${elem.listFour}</a
+       >
+     </li>
+   </ul>
+ </div>`
+  })
+  return footerWrapper.insertAdjacentHTML('afterbegin', element)
+}
+
+footer()
+
+const date =  new Date()
+const year = date.getFullYear()
+document.getElementById("copy").textContent +=  `© ${year} Copy Right.`;
+
+//logipassword
+//sigupshow forms
+//cotact map
