@@ -6,6 +6,22 @@ const footerWrapper = document.getElementById("footerWrapper");
 
 
 
+// function mobileNav(){
+//   const navLists = document.querySelector(".nav_lists");
+//   const navList = document.querySelectorAll(".nav-list");
+//   const navLinks = document.querySelectorAll(".nav-link");
+//   const logo = document.querySelector(".logo0");
+//   navLists.classList.toggle("hide");
+//   navLists.classList.toggle("mobile-nav");
+//   logo.classList.toggle("hide");
+//   for (const list of navList) {
+//     list.style.padding = "1.5rem 1rem 0";
+//   }
+//   for (const link of navLinks) {
+//     link.classList.toggle("dark");
+//     link.style.fontSize = "1rem";
+//   }
+// }
 function makeCards() {
   let html = "";
   obj.map(function (item) {
@@ -13,7 +29,7 @@ function makeCards() {
     <a class="card1" href="#">
     <h3>${item.job}</h3>
     <p class="small">${item.desc}</p>
-    <div class="go-corner" href="#">
+    <div class="go-corner">
        <div class="go-arrow">
        →
      </div>
@@ -57,11 +73,17 @@ questions.addEventListener('click', function(e){
 })
 
 navigator.geolocation.getCurrentPosition(function(position){
-  console.log(position.coords);
-  const {latitude} = position.coords
-  const {longitude} = position.coords
+  const {latitude} = position.coords;
+  const {longitude} = position.coords;
   console.log(latitude,longitude);
   console.log(`https://www.google.com/maps/@${latitude},${longitude}`)
+  const coords = [latitude, longitude];
+  const map = L.map("map").setView(coords, 13);
+
+  L.tileLayer("https://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
 }, function(){
   alert('not seen')
 })
@@ -109,6 +131,4 @@ const date =  new Date()
 const year = date.getFullYear()
 document.getElementById("copy").textContent +=  `© ${year} Copy Right.`;
 
-//logipassword
-//sigupshow forms
-//cotact map
+

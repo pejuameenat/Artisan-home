@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script defer src="https://cdn.tailwindcss.com"></script>
     <title>Artisan Home</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
                 <a class="nav_links" href="#">Artisans</a>
             </div>
             <div id="lists">
-                <img src="./images/hamburger.png" class="menu" alt="">
+                <img src="./images/main-menu.png" class="menu" alt="">
                 <ul class="nav-lists">
                     <li class="nav_list"><a class="nav_links" href="#">About Us</a></li>
                     <li class="nav_list"><a class="nav_links" href="#services">Services</a></li>
@@ -55,7 +57,7 @@
         </section>
     <section id="services">
         <div id="container">
-            <h2 id="browse">Browse categories</h2>
+            <h2 id="browse">Browse Categories</h2>
             <p class="jobs">Looking for our top rated professionals? <a href="#">search here</a> </p>
             <div id="grid"></div>
         </div>
@@ -67,12 +69,14 @@
             </div>
         </div>
     </section>
-    <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
-<footer class="bg-neutral-100 text-center dark:bg-neutral-600 lg:text-left">
-    <div class="container p-6">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4" id ="footerWrapper">
-      </div>
-    </div>
+    <section id="contact">
+        <div id="map"></div>
+    </section>
+    <footer class="bg-neutral-100 text-center dark:bg-neutral-600 lg:text-left">
+        <div class="container p-6">
+           <div class="grid md:grid-cols-2 lg:grid-cols-4" id ="footerWrapper">
+           </div>
+        </div>
   
     <!--Copyright section-->
     <div

@@ -13,6 +13,7 @@
   --grn: cadetblue;
   --fade-blue: #6089d4;
   --cornblue: cornflowerblue;
+  --color-light--1: #aaa;
   --clr-grey: #ebebeb;
   --navy: #09094d;
   --padding-nav: .8rem 0;
@@ -51,9 +52,12 @@ nav {
 
 .menu {
   width: 40px;
+  height: 30px;
 }
 
 .nav-lists {
+  display:  flex;
+  flex-direction: column;
   display: none;
   transition: 400ms ease-in;
 }
@@ -67,7 +71,7 @@ nav {
 .nav_links:hover {
   font-weight: var(--fontWeigth);
 }
-
+/* aout */
 .head-section {
   text-align: center;
   padding: 1.5rem .7rem;
@@ -85,7 +89,6 @@ nav {
 .container {
   margin: 0 auto;
   padding: 3rem 0;
-
 }
 
 header {
@@ -96,7 +99,7 @@ header {
 .image-hero img {
   max-width: 100%;
   width: 85%;
-  height: 400px;
+  height: 350px;
   border-top-left-radius: 40%;
   border-bottom-right-radius: 40%;
   display: block;
@@ -141,7 +144,6 @@ header {
 
   100% {
     color: #ed64c2;
-
   }
 }
 
@@ -169,18 +171,18 @@ header {
   color: cadetblue;
 }
 
+/* services */
 #services {
   min-height: 100vh;
   color: var(--blck);
 }
-
 #container {
   width: 90%;
   max-width: 1000px;
   margin: 2rem auto;
   padding: 1.5rem 1rem;
 }
-
+ 
 #browse {
   font-size: 2rem;
 }
@@ -188,6 +190,8 @@ header {
 .card {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  max-width: 400px;
+  padding: .3rem;
 }
 
 .card p {
@@ -224,7 +228,6 @@ header {
 .card1 {
   display: block;
   position: relative;
-  max-width: 265px;
   background-color: #f2f8f9;
   border-radius: 4px;
   padding: 32px 24px;
@@ -329,13 +332,24 @@ footer a:hover{
   text-decoration: underline ;
 
 }
-@media only screen and (min-width: 800px) {
+
+#contact{
+  background-color: var(--color-light--1);
+  max-width: 100%;
+  height: 100vh;
+  /* border: 5px solid red; */
+  
+}
+#map {
+   height: 100%; 
+}
+@media only screen and (min-width: 912px) {
   .menu {
     display: none;
   }
 
   #lists {
-    flex-basis: 60%;
+    flex-basis: 70%;
     margin-left: 2rem;
   }
 
@@ -352,6 +366,7 @@ footer a:hover{
 
   .nav-lists {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -372,7 +387,7 @@ footer a:hover{
   }
 
   .image-hero img {
-    height: 500px;
+    height: 460px;
   }
 
   .head-section,
@@ -401,11 +416,19 @@ footer a:hover{
   #browse {
     font-size: 3.5rem;
   }
+  .card{
+    padding: 0;
+  }
 
   #grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
   }
+}
 
+@media only screen and (min-width:1024px){
+  #lists {
+    flex-basis: 60%;
+}
 }

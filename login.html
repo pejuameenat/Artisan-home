@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <div class="login-img">
-            <form>
-                <h2>Login</h2>
-                <p>Dont have an account yet? <a href="./signup.html">Sign Up</a></p>
-                <label for="username" class="label">Email Adrress</label>
-                <input type="text" name="" id="username" placeholder="john@example.com">
-                <label for="password" class="label">Password</label>
-                <div class="input-div">
-                    <input type="text" name="" id="password" placeholder="Password">
-                    <img src="./images/visible.png" alt="">
-                </div>
-                <div class="checked"><input type="checkbox" name="" id=""><p>remember me</p></div>
-               <button id="login">Login</button>
-            </form>
+  </head>
+  <body>
+    <div class="overall-container">
+      <nav>
+        <ul>
+          <li class="list-item1"><a href="">Sign In</a></li>
+          <li class="list-item2"><a href="./signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <h1 class="hero-head">Log in to your account</h1>
+        <p class="hero-intro">Sign in to connect with Artisans/employers</p>
+        <div class="login-options">
+          <button class="submit">
+            <a href=""
+              ><img src="./images/google.png" alt="" /> Sign in with Google</a
+            >
+          </button>
+          <button class="submit">
+            <a href=""
+              ><img src="./images/facebook2.png" alt="" /> Sign in with
+              Facebook</a
+            >
+          </button>
         </div>
-        <div class="option">
-            <p>or log in with</p>
-            <div class="button">
-                <button><img src="./images/google.png" alt="">Google</button>
-                <button><img src="./images/facebook2.png" alt="">Facebook</button>
-            </div>
-            <div class="back-home"><img src="./images/up-arrrows.png" class="anim-img" alt=""><a href="./index.html">Back to home</a></div>
+        <p class="divider">or</p>
+        <form>
+          <input
+            type="text"
+            name=""
+            placeholder="Username"
+            class="username"
+            required
+          />
+          <div class="password">
+            <input
+              type="password"
+              name=""
+              placeholder="Password"
+              class="pword"
+              required
+            /><img src="./images/visible.png" alt="" class="visible" />
+            <p id="error-msg" class="hide"></p>
+          </div>
+          <p>
+            By clicking 'Sign in' you agree to our <a href="#">terms</a> and our
+            <a href="#">Privacy Policy</a>
+          </p>
+          <button class="submit-form submit-btn" id="loginbtn">
+            <a href="" class="submit-form-a">Sign in</a>
+          </button>
+        </form>
+        <a href="#" class="forgot-pwd">Forgot Password?</a>
+        <div class="back-home">
+          <img
+            src="./images/up-arrrows.png"
+            class="anim-img"
+            alt="home-arrow"
+          />
+          <a href="./index.html">Back to home</a>
         </div>
+      </div>
     </div>
-</body>
+     <script src="./form.js"></script>
+  </body>
 </html>

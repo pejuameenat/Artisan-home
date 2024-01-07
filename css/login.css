@@ -21,114 +21,210 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(45deg, var(--white), rgba(255, 0, 0, 0.1),rgba(0,0,255,0.1));
-    height:100vh
-}
-
-.container{
-    max-width: 500px;
-    margin:  2rem auto;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
-    border-radius: 4px;
-}
-form{
-    padding: 1rem;
-}
-form h2{
-    color:var(--navy);
-    font-size:2rem;
-    padding: var(--padding-label);
-}
-
-form a{
-    color:var(--fade-blue);
-    text-decoration: none;
-    font-weight: 600;
-}
-form a:hover, form a:focus{
-    color: var(--corn-blue)
-}
-label{
-    display: block;
-    padding-top: 1rem;
-}
-.input-div{
-    position: relative;
-}
-.input-div img{
-    width: 20px;
-    position: absolute;
-    top: .5rem;
-    right: .5rem;
-}
-[type='text']{
-    display: block;
-    width: 100%;
-    padding: .6rem;
-    border-radius: 5px;
-    outline: 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/hero-art.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gainsboro;
+    min-height:100vh;
 }
  
-[type='text']:focus{
- outline: 1px solid var(--fade-blue);
- border: 0;
-}
-.checked{
-display: flex;
-padding: var(--padding-label);
-}
-.checked p{
-    margin-left: .5rem;
+
+.overall-container {
+    padding-bottom: 2rem;
 }
 
-#login{
-  background-color: var(--fade-blue);
-  padding: var(--padding-nav);
-  width: 100%;
-  border-radius: 5px;
-  border: 0;
-  font-weight: 600;
-}
-#login:hover{
-    background-color:var(--corn-blue);
+/* nav bar */
+
+.intro-head a {
+    text-decoration: none;
+    color: var(--blck);
 }
 
-.option p{
-    text-align: center;
-    padding: var(--padding-nav);
-    position: relative;
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--white);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
 }
-.option p::before{
-    width: 150px;
-    height: 3px;
-    background-color: var(--blck);
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
+
+nav {
+    margin: 2rem auto 0;
+    max-width: 305px;
 }
-.button{
+
+nav ul {
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 0 1rem 2rem;
 }
-.button img{
-  width: 15px;
-  align-self: center;
+
+ul li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    text-align: center;
 }
-.button button{
+
+.list-item1 {
+    background-color: var(--white);
     width: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.list-item2 {
+    width: 50%;
+}
+
+li a {
+    color: var(--vlr-black);
+    text-decoration: none;
+}
+
+/* container */
+.hero-head,
+.hero-intro {
+    text-align: center;
+    padding: 1rem 0;
+}
+.submit:hover{
+    background-color: #f0efef;
+}
+
+.submit,
+.submit-form,
+form input {
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
     border-radius: 5px;
-    padding: .6rem;
-    border: 0;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: transparent;
+    outline: 0;
+    font-size: 1rem;
     transition: 400ms ease-in;
 }
-.button button:focus, .button button:hover{
-     background-color: var(--clr-grey);
+
+ 
+
+.password {
+    position: relative
 }
+
+.password img {
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--vlr-plum);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit img {
+    width: 9%;
+}
+
+.submit a {
+    text-decoration: none;
+    color: var(--blck);
+    font-weight: 600;
+}
+
+.divider {
+    position: relative;
+    color: var(--blck);
+    text-align: center;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    height: .5px;
+    width: 95px;
+    background-color: var(--blck);
+    left: 1rem;
+    top: .6rem;
+}
+
+.divider::after {
+    content: '';
+    position: absolute;
+    height: .5px;
+    width: 95px;
+    background-color: var(--blck);
+    right: 1rem;
+    top: .6rem;
+
+}
+
+/* form */
+form a {
+    color: var(--blck);
+}
+
+form p {
+    text-align: center;
+
+}
+
+.submit-form {
+    background-color: var(--corn-blue);
+    color: var(--white);
+    font-weight: 600;
+    border: 0;
+    font-size: 1.1rem;
+}
+.submit-form:hover{
+    background-color: rgb(124, 159, 222);
+}
+
+.submit-form-a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+.forgot-pwd {
+    color: var(--blck);
+    text-align: center;
+    padding: 1rem 0;
+    text-decoration: none;
+    display: block;
+    transition: 400ms ease-in;
+}
+
+.forgot-pwd:hover{
+    color: var(--corn-blue);
+    font-weight: 600;
+}
+.error-msg {
+    color: #f00;
+    text-align: left;
+    padding-bottom: 1rem;
+    font-weight: 600;
+
+}
+
+.hide{
+    display: none;
+}
+ 
 .back-home{
     float: right ;
-    padding-top: .9rem;
+    margin-top: 1.5rem;
 }
 .back-home img{
     width: 15px;
@@ -139,16 +235,68 @@ padding: var(--padding-label);
     color: var(--corn-blue);
     font-weight: 600;
 }
+
 .anim-img{
-    animation:moveUp 1000ms linear infinite;
-    transition: all ease-in;
+    animation:moveUp 1000ms ease-in infinite;
+    transition: all linear;
 }
 
 @keyframes moveUp{
  0%{
-    transform: translateY(-8px);
+    transform: translateY(-7px);
  }
  100%{
-    transform: translateY(8px);
+    transform: translateY(5px);
  }
+}
+
+@media only screen and (min-width: 760px){
+    .container {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    nav {
+        max-width: 500px;
+    }
+
+    .login-options {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .divider::before {
+        width: 150px;
+        left: 4rem;
+        top: .8rem;
+    }
+
+    .divider::after {
+        width: 150px;
+        right: 4rem;
+        top: .8rem;
+    }
+
+    .box {
+        display: block;
+        max-width: 180px;
+        background-color: var(---white);
+        padding: .6rem;
+        border-radius: 5px;
+        position: absolute;
+        top: 15rem;
+        right: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 540px) {
+    nav {
+        max-width: 298px;
+    }
+
+    .container {
+        max-width: 300px;
+    }
 }
