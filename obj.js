@@ -83,6 +83,52 @@
    }
 ]
 
+
+export const obj4 = [
+   {
+      id: 0,
+      cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
+      img: './images/user-1.jpg',
+      h5: 'Hele',
+      p: 'Manager'
+   },
+   {
+      id: 1,
+      cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
+      img: './images/user-2.jpg',
+      h5: 'Dale',
+      p: 'Manager'
+   },
+   {
+      id: 2,
+      cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
+      img: './images/user-3.jpg',
+      h5: 'Sumi',
+      p: 'Manager'
+   },
+   {
+      id: 3,
+      cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
+      img: './images/user-1.jpg',
+      h5: 'Isiah',
+      p: 'Driver'
+   },
+   {
+      id: 4,
+      cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
+      img: './images/user-2.jpg',
+      h5: 'Matthew',
+      p: 'Office Asst'
+   },
+   {
+      id: 5,
+      cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
+      img: './images/user-3.jpg',
+      h5: 'Jack',
+      p: 'Clerk'
+   }
+]
+
 export const obj3 = [
    {id:0,
     h5: 'About Us',

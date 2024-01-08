@@ -1,93 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <script defer src="https://cdn.tailwindcss.com"></script>
     <title>Artisan Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="nav-bar">
-            <div class="logo">
-                <a class="nav_links" href="#">Artisans</a>
-            </div>
-            <div id="lists">
-                <img src="./images/main-menu.png" class="menu" alt="">
-                <ul class="nav-lists">
-                    <li class="nav_list"><a class="nav_links" href="#">About Us</a></li>
-                    <li class="nav_list"><a class="nav_links" href="#services">Services</a></li>
-                    <li class="nav_list"><a class="nav_links" href="#faqs">Faqs</a></li>
-                    <li class="nav_list"><a class="nav_links" href="#contact">Contact Us</a></li>
-                    <li class="nav_list"><a class="nav_links" href="./signup.html">Register /  login</a></li>
-                </ul>
-            </div>
+      <div class="nav-bar">
+        <div class="logo">
+          <a class="nav_links" href="#">Artisans</a>
         </div>
+        <div id="lists">
+          <img src="./images/main-menu.png" class="menu" alt="" />
+          <ul class="nav-lists">
+            <li class="nav_list"><a class="nav_links" href="#">About Us</a></li>
+            <li class="nav_list">
+              <a class="nav_links" href="#services">Services</a>
+            </li>
+            <li class="nav_list"><a class="nav_links" href="#faqs">Faqs</a></li>
+            <li class="nav_list">
+              <a class="nav_links" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav_list">
+              <a class="nav_links" href="./signup.html">Register / login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <header>
-        <div class="container">
-            <div class="grid-wrapper">
-                <div class="head-section">
-                    <h1>You have gained the practical skills it's time to<span> monetize it!</span></h1>
-                    <p>Welcome to a world where craftsmanship meets artistry, where every creation tells a unique story. Explore the exquisite realm of handcrafted wonders that captivate the soul, where passion converges with skill, giving life to one-of-a-kind pieces that celebrate the beauty of dedication and creativity.</p>
-                    <button id="btn-hero_one">Hire an Artisan</button>
-                    <button id="btn-hero_two">Learn More</button>
-                    </div>
-                    <div class="image-hero">
-                        <img src="./images//heroart.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section>
-            <div class="container">
-                <div class="grid-wrapper">
-                    <div class="image-hero">
-                        <img src="./images/pottery.avif" alt="">
-                    </div>
-                    <div class="head-section">
-                        <h2 class="about">From the hands of our professionals to your<strong> doorstep</strong></h2>
-                        <p>Our professionals are vetted and expericienced in their vairous fields of expertise. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nam quo ipsa repudiandae asperiores eligendi.</p>
-                        </div>
-                </div>
-            </div>
-        </section>
-    <section id="services">
-        <div id="container">
-            <h2 id="browse">Browse Categories</h2>
-            <p class="jobs">Looking for our top rated professionals? <a href="#">search here</a> </p>
-            <div id="grid"></div>
+      <div class="container">
+        <div class="grid-wrapper">
+          <div class="head-section">
+            <h1>
+              You have gained the practical skills it's time to<span>
+                monetize it!</span
+              >
+            </h1>
+            <p>
+              Welcome to a world where craftsmanship meets artistry, where every
+              creation tells a unique story. Explore the exquisite realm of
+              handcrafted wonders that captivate the soul, where passion
+              converges with skill, giving life to one-of-a-kind pieces that
+              celebrate the beauty of dedication and creativity.
+            </p>
+            <button id="btn-hero_one">Hire an Artisan</button>
+            <button id="btn-hero_two">Learn More</button>
+          </div>
+          <div class="image-hero">
+            <img src="./images//heroart.jpg" alt="" />
+          </div>
         </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="grid-wrapper">
+          <div class="image-hero">
+            <img src="./images/pottery.avif" alt="" />
+          </div>
+          <div class="head-section">
+            <h2 class="about">
+              From the hands of our professionals to your<strong>
+                doorstep</strong
+              >
+            </h2>
+            <p>
+              Our professionals are vetted and expericienced in their vairous
+              fields of expertise. Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Ipsam nam quo ipsa repudiandae asperiores
+              eligendi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div id="container">
+        <h2 id="browse">Browse Categories</h2>
+        <p class="jobs">
+          Looking for our top rated professionals? <a href="#">search here</a>
+        </p>
+        <div id="grid" class="grid"></div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="flex">
+        <div class="form">
+            <h3>Where are you?</h3>
+          <form id="request">
+            <input type="text" name="" id="" placeholder="Location" />
+            <input type="text" name="" id="" placeholder="Service needed" />
+            <button id="mapbtn">Request an Artisan</button>
+          </form>
+        </div>
+        <div id="map"></div>
+      </div>
     </section>
     <section id="faqs">
         <div class="container">
-            <h3>frequently asked questions</h3>
-            <div class="faqs" id="faq">
-            </div>
+          <h3>frequently asked questions</h3>
+          <div class="faqs" id="faq"></div>
         </div>
-    </section>
-    <section id="contact">
-        <div id="map"></div>
-    </section>
+      </section>
+
+      <section id="testimonials">
+        <div class="container">
+          <h3>What do our clients say about us?</h3>
+          <div  id="cards" class="testimony-grid">
+             
+          </div>
+        </div>
+      </section>
     <footer class="bg-neutral-100 text-center dark:bg-neutral-600 lg:text-left">
-        <div class="container p-6">
-           <div class="grid md:grid-cols-2 lg:grid-cols-4" id ="footerWrapper">
-           </div>
-        </div>
-  
-    <!--Copyright section-->
-    <div
-      class="bg-neutral-200 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200" id="copy">
-      <a
-        class="text-neutral-800 dark:text-neutral-400"
-        href="https://tw-elements.com/"
-        >All rights reserved, Artisans</a
+      <div class="container p-6">
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-4"
+          id="footerWrapper"
+        ></div>
+      </div>
+
+      <!--Copyright section-->
+      <div
+        class="bg-neutral-200 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"
+        id="copy"
       >
-    </div>
-  </footer>
+        <a
+          class="text-neutral-800 dark:text-neutral-400"
+          href="https://tw-elements.com/"
+          >All rights reserved, Artisans</a
+        >
+      </div>
+    </footer>
     <script type="module" src="./main.js"></script>
-</body>
+  </body>
 </html>
