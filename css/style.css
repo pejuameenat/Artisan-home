@@ -27,7 +27,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
+/* navigation*/
 nav {
   position: -webkit-sticky;
   position: sticky;
@@ -41,7 +41,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-nav);
-  
 }
 
 .logo a {
@@ -92,6 +91,7 @@ nav {
   padding: 3rem 0;
 }
 
+/* intro */
 header {
   background-color: var(--blck);
   color: var(--white);
@@ -99,7 +99,7 @@ header {
 
 .image-hero img {
   max-width: 100%;
-  width: 85%;
+  width: 70%;
   height: 350px;
   border-top-left-radius: 40%;
   border-bottom-right-radius: 40%;
@@ -282,6 +282,10 @@ header {
 .grid h3 {
   font-weight: var(--fontWeigth);
 }
+/* contact */
+#contact{
+ margin: 3rem auto;
+}
 
 /* faqs */
 .questions{
@@ -375,6 +379,7 @@ footer a:hover{
   background-color:var(--fade-blue) ;
 }
 
+/* testimoi sectio */
 #testimonials h3{
    text-align: center;
    font-weight: var(--fontWeigth);  
@@ -387,7 +392,7 @@ footer a:hover{
 .cardWrapper{
   position: relative;
   width: 300px;
-  height: 250px;
+  height: 280px;
   padding: var(--padding-btn);
   background-color:var(--white) ;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -397,6 +402,9 @@ footer a:hover{
 }
 .cardWrapper:hover{
   transform: scale(1.05);
+}
+.cardWrapper img{
+  width: 20px;
 }
 .overlay{
   position: absolute;
@@ -534,5 +542,8 @@ footer a:hover{
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+.image-hero img {
+  width: 85%;
 }
 }

@@ -87,27 +87,31 @@
 export const obj4 = [
    {
       id: 0,
+      quote:'./images/quote.png',
       cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
       img: './images/user-1.jpg',
-      h5: 'Hele',
+      h5: 'Jeff',
       p: 'Manager'
    },
    {
       id: 1,
+      quote:'./images/quote.png',
       cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
-      img: './images/user-2.jpg',
+      img: './images/user-3.jpg',
       h5: 'Dale',
       p: 'Manager'
    },
    {
       id: 2,
+      quote:'./images/quote.png',
       cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
-      img: './images/user-3.jpg',
+      img: './images/user-2.jpg',
       h5: 'Sumi',
       p: 'Manager'
    },
    {
       id: 3,
+      quote:'./images/quote.png',
       cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
       img: './images/user-1.jpg',
       h5: 'Isiah',
@@ -115,6 +119,7 @@ export const obj4 = [
    },
    {
       id: 4,
+      quote:'./images/quote.png',
       cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
       img: './images/user-2.jpg',
       h5: 'Matthew',
@@ -122,6 +127,7 @@ export const obj4 = [
    },
    {
       id: 5,
+      quote:'./images/quote.png',
       cardp: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur rerum sed temporibus similique quam eligendi blanditiis fuga dicta rem!",
       img: './images/user-3.jpg',
       h5: 'Jack',

@@ -69,32 +69,32 @@ questions.addEventListener("click", function (e) {
   }
 });
 
-navigator.geolocation.getCurrentPosition(
-  function (position) {
-    const { latitude } = position.coords;
-    const { longitude } = position.coords;
-    console.log(latitude, longitude);
-    console.log(`https://www.google.com/maps/@${latitude},${longitude}`);
-    const coords = [latitude, longitude];
-    const map = L.map("map").setView(coords, 13);
+if(navigator.geolocation){
+  navigator.geolocation.getCurrentPosition(
+    function (position) {
+      const { latitude } = position.coords
+      const { longitude } = position.coords
+      const coords = [latitude, longitude]
+      const map = L.map('map').setView(coords, 13)
 
-    L.tileLayer("https://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
-    map.dragging.disable();
-    // map.zoomCotrols= false
-  },
-  function () {
-    alert("could not get location");
+      L.tileLayer('https://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map)
+      map.scrollWheelZoom.disable()
+      
+    },
+    function () {
+      alert('could not get location')
+    }
+  )
   }
-);
-
 function testimony(){
   const cardWrapper = document.querySelector('#cards')
  let cards = ''
 obj4.map(function(card){
   cards = `<div class="cardWrapper">
+  <img src=${card.quote}  alt="quote icon" />
   <p> ${card.cardp}</p>
   <div class="overlay">
     <img src=${card.img} alt="display picture">
