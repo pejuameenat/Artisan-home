@@ -23,7 +23,9 @@
   --font-medium: 1rem;
   --fontWeigth: 600;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -432,6 +434,13 @@ footer a:hover{
 .overlay h5, .overlay p{
   color: var(--white);
   text-align: center;
+}
+@media only screen and (min-width: 600px){
+  .grid, .testimony-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
  
 @media only screen and (min-width: 912px) {
