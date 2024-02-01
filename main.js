@@ -4,22 +4,11 @@ const cards = document.getElementById("grid");
 const questions = document.getElementById("faq");
 const footerWrapper = document.getElementById("footerWrapper");
 
-// function mobileNav(){
-//   const navLists = document.querySelector(".nav_lists");
-//   const navList = document.querySelectorAll(".nav-list");
-//   const navLinks = document.querySelectorAll(".nav-link");
-//   const logo = document.querySelector(".logo0");
-//   navLists.classList.toggle("hide");
-//   navLists.classList.toggle("mobile-nav");
-//   logo.classList.toggle("hide");
-//   for (const list of navList) {
-//     list.style.padding = "1.5rem 1rem 0";
-//   }
-//   for (const link of navLinks) {
-//     link.classList.toggle("dark");
-//     link.style.fontSize = "1rem";
-//   }
-// }
+ 
+ document.querySelector('.menu').addEventListener('click', function(){
+    document.querySelector('.nav-bar').classList.toggle('active')
+    document.querySelector('.nav-lists').classList.toggle('nav-lists-active')
+ })
 function makeCards() {
   let html = "";
   obj.map(function (item) {
