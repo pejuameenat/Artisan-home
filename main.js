@@ -78,6 +78,7 @@ if(navigator.geolocation){
     }
   )
   }
+  
 function testimony(){
   const cardWrapper = document.querySelector('#cards')
  let cards = ''
