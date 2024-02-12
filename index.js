@@ -1,7 +1,8 @@
 const header = document.querySelector(".header");
+const vendor = document.getElementById("vendor");
+
 header.addEventListener("click", function (e) {
   const employer = document.getElementById("employer");
-  const vendor = document.getElementById("vendor");
   const forms = document.querySelectorAll(".form");
   const clicked = e.target.closest(".form");
   if (clicked) {
@@ -39,5 +40,9 @@ function errorDisplay(elem){
     e.preventDefault()
     errorDisplay(msgWrapper)
   }
-
   })
+
+vendor.addEventListener('keydown', function (e) {
+  console.log(e.key)
+  console.log('clickes');
+})
