@@ -83,6 +83,7 @@ form h2{
 }
 input:focus, input:hover{
     background-color: var(--clr-grey);
+    border: 2px solid var(--fade-blue);
 }
 .submit-btn{
    width: 100%;

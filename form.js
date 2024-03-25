@@ -22,12 +22,14 @@ passwordVisible.addEventListener("click", function () {
       warnMsg.textContent = "input fields cannot be empty"
       elem.append(warnMsg)
       input.style.border = "1px solid #f00";
-      console.log(warnMsg);
+      if(warnMsg.classList.contains('error-msg'))return
+    }else{
+        input.style.border = '1px solid cornflowerblue'
     }
   });
 }
 
 login.addEventListener("click", function (e) {
-  e.preventDefault();
-  errorDisplay( passwordWrapper)
+   e.preventDefault()
+   errorDisplay(passwordWrapper)
 });

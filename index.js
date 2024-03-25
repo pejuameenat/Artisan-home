@@ -20,7 +20,7 @@ header.addEventListener("click", function (e) {
   clicked.classList.add("active");
 });
 
-function errorDisplay(elem){
+ function errorDisplay(elem){
     const inputs = document.querySelectorAll("input");
     const warnMsg= document.createElement('p')
     inputs.forEach((input) => {
@@ -43,6 +43,17 @@ function errorDisplay(elem){
   })
 
 vendor.addEventListener('keydown', function (e) {
-  console.log(e.key)
-  console.log('clickes');
+  const v = vendor.querySelectorAll('[cellIndex]') 
+  v.forEach(function(item, i){
+      let isFirst = v.item(0)
+      isFirst.focus()
+      let isLast = v.item(v.length - 1)
+      if (e.key === 'ArrowDown') {
+        v.item(i + 1).focus()
+      }
+      if (e.key === 'ArrowUp') {
+        if (isLast) v.item(i - 1).focus()
+      }
+  })
+    
 })

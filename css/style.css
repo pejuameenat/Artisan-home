@@ -36,7 +36,6 @@ body {
 /* navigation*/
 header {
   position: -webkit-sticky;
-  position: relative;
   top: 0;
   background-color: var(--blck);
   z-index: 1000;
