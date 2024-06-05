@@ -71,7 +71,8 @@ header {
   border-radius: 6px;
 }
 
-#register:hover, .logo a{
+#register:hover,
+.logo a {
   border: 0 !important;
 }
 
@@ -94,7 +95,7 @@ header {
   margin: 0 auto;
   padding: 3rem 0;
 }
- 
+
 /* intro */
 #header {
   background-color: var(--blck);
@@ -103,8 +104,9 @@ header {
 
 .image-hero img {
   max-width: 100%;
-  width: 70%;
+  width: 80%;
   height: 350px;
+  object-fit: cover;
   border-top-left-radius: 40%;
   border-bottom-right-radius: 40%;
   display: block;
@@ -175,6 +177,7 @@ header {
 .about strong {
   color: cadetblue;
 }
+
 
 /* services */
 #services {
@@ -599,9 +602,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width:912px) {
-  header{
+  header {
     padding: 0 30px;
   }
+
   .nav-bar {
     position: absolute;
     top: 50px;
@@ -632,9 +636,9 @@ footer a:hover {
   }
 }
 
-@media only screen and (min-width:768px) and (max-width:1000px){
-  .grid-wrapper{
+@media only screen and (min-width:768px) and (max-width:1000px) {
+  .grid-wrapper {
     width: 85%;
-    margin:  0 auto;
+    margin: 0 auto;
   }
 }
